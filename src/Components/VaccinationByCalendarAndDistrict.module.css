@@ -1,0 +1,88 @@
+.calendarAndDistrictDiv {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+.stateLabel,
+.districtLabel,
+.dateLabel {
+  font-size: large;
+  text-align: center;
+}
+
+.datePicker {
+  outline: none;
+  padding: 0.25rem;
+  width: 60%;
+  font-size: medium;
+}
+
+.parentContainerDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.vaccineCentersDiv {
+  border: 2px solid rgb(142, 148, 238);
+  margin: 1rem;
+  box-shadow: 4px -3px 3px 0px #ad9696;
+  font-family: "Calibri";
+  text-align: center;
+}
+
+.centersInfoDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem;
+  grid-gap: 1.5rem;
+}
+
+.infoCard {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .parentContainerDiv {
+    grid-template-columns: 1fr;
+  }
+  .centersInfoDiv {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .vaccineCentersDiv {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .stateLabel,
+  .districtLabel,
+  .dateLabel {
+    font-size: medium;
+    text-align: unset;
+  }
+  .datePicker {
+    width: 100%;
+    font-size: medium;
+  }
+  .infoCard {
+    font-size: medium;
+    text-align: unset;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .infoCard,
+  .parentContainerDiv {
+    font-size: small;
+  }
+}

@@ -1,0 +1,22 @@
+.mainContent {
+  position: relative;
+  font-size: large;
+  margin-bottom: 4rem;
+}
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width:380px) {
+  .Footer {
+      height: 3rem;
+  }
+}

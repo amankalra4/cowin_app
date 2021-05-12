@@ -1,0 +1,26 @@
+.Toolbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  /*z-index of toolbar should be less than the z-index of backdrop */
+  z-index: 90;
+  background-color: #343a40;
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 380px) {
+  .heading {
+    font-size: 1rem;
+  }
+}
